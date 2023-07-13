@@ -1,0 +1,113 @@
+.accountList {
+  .header {
+    padding: 20px 10px;
+  }
+
+  .table {
+    td,
+    th {
+      color: #272727 !important;
+    }
+
+    .faculty {
+      :global {
+        .ant-select-selector {
+          background-color: transparent !important;
+          border: none !important;
+          outline: none !important;
+          cursor: text !important;
+        }
+
+        .ant-select-arrow {
+          display: none !important;
+        }
+
+        .ant-select-selection-item {
+          color: #272727 !important;
+        }
+      }
+    }
+
+    .password {
+      border: none;
+      outline: none;
+      box-shadow: none;
+
+      :global {
+        .ant-input-suffix {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.classDrawer {
+  label,
+  input {
+    color: #272727 !important;
+    font-weight: 400;
+  }
+
+  input {
+    height: 32px !important;
+  }
+
+  .passWordInput {
+    input {
+      height: 22px !important;
+    }
+
+    :global {
+      .ant-input-affix-wrapper {
+        height: 32px !important;
+      }
+    }
+  }
+
+  :global {
+    .ant-drawer-header {
+      background-color: #001529;
+      .ant-drawer-header-title {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .ant-drawer-title {
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+
+      .anticon.anticon-close {
+        svg {
+          path {
+            fill: #fff;
+          }
+
+          &:hover {
+            path {
+              fill-opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modalDelete {
+  :global {
+    .ant-modal-title {
+      svg {
+        margin-right: 6px;
+        path {
+          fill: red;
+        }
+      }
+    }
+    .ant-btn-primary {
+      background-color: red;
+    }
+  }
+}
