@@ -20,6 +20,7 @@ const useAuth = () => {
         onSuccess: ({ data }) => {
             if (data) {
                 localStorage.setItem("token", data.idToken);
+                localStorage.setItem("refresh_token", data.refreshToken);
                 localStorage.setItem("email", data.email);
                 localStorage.setItem("bg", ColorList[Math.floor(Math.random() * 4)]);
                 if (data.email === 'admin@caothang.edu') {

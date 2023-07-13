@@ -78,7 +78,6 @@ const Dashboard = () => {
       []
     );
 
-    // console.log(attendanceList);
     const labels = attendanceList.reduce(
       (prev, cur) =>
         cur.classSectionId === value

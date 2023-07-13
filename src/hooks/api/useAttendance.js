@@ -54,7 +54,6 @@ const useAttendance = () => {
     });
 
     const attendanceList = useMemo(() => attendanceListBase?.filter(data => data.lecturerId === currentUser?.localId) || [], [attendanceListBase, currentUser?.localId])
-
     return {
         isLoading,
         attendanceList,
