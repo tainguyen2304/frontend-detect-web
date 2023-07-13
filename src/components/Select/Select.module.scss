@@ -1,0 +1,51 @@
+.bisoSelect {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	.decayIconSelect {
+		position: absolute;
+		right: 8px;
+		top: 3px;
+	}
+	:global {
+		.ant-select-arrow {
+			.anticon:not(.ant-select-suffix) {
+				pointer-events: none;
+			}
+			color: rgba(39, 39, 39, 0.8);
+			right: 8px;
+		}
+		.ant-select-selector {
+			border: 1px solid rgba(39, 39, 39, 0.4) !important;
+		}
+
+		.ant-select-borderless {
+			.ant-select-selector {
+				border: none !important;
+			}
+		}
+	}
+
+	.selectWithConfigs {
+		width: calc(100% - 28px);
+	}
+
+	.wrapperOptions {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #dddddd;
+		width: 32px;
+		height: 32px;
+		background: #dddddd;
+		border: 1px solid rgba(39, 39, 39, 0.4);
+		border-left: none !important;
+		border-radius: 1px 1px 0px 0px;
+
+		&:hover {
+			cursor: pointer;
+			opacity: 0.9;
+		}
+	}
+}
